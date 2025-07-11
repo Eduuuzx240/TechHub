@@ -1,0 +1,333 @@
+@@ .. @@
+.mobile-logout-btn:hover {
+    background: rgba(220, 38, 38, 0.2);
+}
+
+
+/* Adicionar no final de styles.css */
+
+.product-card .product-community-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: linear-gradient(45deg, #10b981, #059669); /* Cor verde */
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
++
++/* Publish Form Styles */
++.publish-form-section {
++    padding: 5rem 0;
++    background: #f9fafb;
++    min-height: 100vh;
++}
++
++.publish-form-container {
++    max-width: 800px;
++    margin: 0 auto;
++    background: white;
++    border-radius: 1rem;
++    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
++    overflow: hidden;
++    border: 1px solid #e5e7eb;
++}
++
++.form-header {
++    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
++    color: white;
++    padding: 2rem;
++    display: flex;
++    align-items: center;
++    gap: 1rem;
++}
++
++.form-header-icon {
++    background: rgba(255, 255, 255, 0.2);
++    padding: 1rem;
++    border-radius: 0.75rem;
++    font-size: 1.5rem;
++    backdrop-filter: blur(8px);
++}
++
++.form-header-content h2 {
++    font-size: 1.75rem;
++    font-weight: bold;
++    margin-bottom: 0.5rem;
++}
++
++.form-header-content p {
++    color: rgba(255, 255, 255, 0.9);
++    font-size: 1rem;
++}
++
++.publish-form {
++    padding: 2rem;
++}
++
++.form-section {
++    margin-bottom: 3rem;
++    padding-bottom: 2rem;
++    border-bottom: 1px solid #f3f4f6;
++}
++
++.form-section:last-of-type {
++    border-bottom: none;
++    margin-bottom: 2rem;
++}
++
++.form-section-title {
++    display: flex;
++    align-items: center;
++    gap: 0.75rem;
++    font-size: 1.25rem;
++    font-weight: 600;
++    color: #111827;
++    margin-bottom: 1.5rem;
++    padding-bottom: 0.75rem;
++    border-bottom: 2px solid #e5e7eb;
++}
++
++.form-section-title i {
++    color: #3b82f6;
++    font-size: 1.125rem;
++}
++
++.form-group {
++    margin-bottom: 1.5rem;
++}
++
++.form-label {
++    display: flex;
++    align-items: center;
++    gap: 0.5rem;
++    font-size: 0.875rem;
++    font-weight: 600;
++    color: #374151;
++    margin-bottom: 0.5rem;
++}
++
++.form-label i {
++    color: #6b7280;
++    font-size: 0.875rem;
++}
++
++.form-input,
++.form-select,
++.form-textarea {
++    width: 100%;
++    padding: 0.875rem 1rem;
++    border: 2px solid #e5e7eb;
++    border-radius: 0.5rem;
++    font-size: 0.875rem;
++    transition: all 0.2s;
++    background: white;
++    color: #111827;
++}
++
++.form-input:focus,
++.form-select:focus,
++.form-textarea:focus {
++    outline: none;
++    border-color: #3b82f6;
++    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
++    background: #fafbff;
++}
++
++.form-input:hover,
++.form-select:hover,
++.form-textarea:hover {
++    border-color: #d1d5db;
++}
++
++.form-textarea {
++    resize: vertical;
++    min-height: 120px;
++    line-height: 1.6;
++}
++
++.form-select {
++    cursor: pointer;
++    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
++    background-position: right 0.5rem center;
++    background-repeat: no-repeat;
++    background-size: 1.5em 1.5em;
++    padding-right: 2.5rem;
++}
++
++.form-row {
++    display: grid;
++    grid-template-columns: 1fr 1fr;
++    gap: 1.5rem;
++}
++
++.form-hint {
++    font-size: 0.75rem;
++    color: #6b7280;
++    margin-top: 0.25rem;
++    font-style: italic;
++}
++
++.form-actions {
++    display: flex;
++    gap: 1rem;
++    justify-content: flex-end;
++    padding-top: 2rem;
++    border-top: 1px solid #f3f4f6;
++}
++
++.btn-primary,
++.btn-secondary {
++    display: flex;
++    align-items: center;
++    gap: 0.5rem;
++    padding: 0.875rem 1.5rem;
++    border-radius: 0.5rem;
++    font-weight: 600;
++    font-size: 0.875rem;
++    cursor: pointer;
++    transition: all 0.2s;
++    border: none;
++    text-decoration: none;
++}
++
++.btn-primary {
++    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
++    color: white;
++    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
++}
++
++.btn-primary:hover {
++    background: linear-gradient(135deg, #2563eb, #7c3aed);
++    transform: translateY(-2px);
++    box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.1);
++}
++
++.btn-primary:disabled {
++    opacity: 0.6;
++    cursor: not-allowed;
++    transform: none;
++}
++
++.btn-secondary {
++    background: white;
++    color: #374151;
++    border: 2px solid #e5e7eb;
++}
++
++.btn-secondary:hover {
++    background: #f9fafb;
++    border-color: #d1d5db;
++    color: #111827;
++}
++
++/* Responsive Design for Forms */
++@media (max-width: 768px) {
++    .publish-form-container {
++        margin: 0 1rem;
++        border-radius: 0.5rem;
++    }
++    
++    .form-header {
++        padding: 1.5rem;
++        flex-direction: column;
++        text-align: center;
++        gap: 1rem;
++    }
++    
++    .form-header-content h2 {
++        font-size: 1.5rem;
++    }
++    
++    .publish-form {
++        padding: 1.5rem;
++    }
++    
++    .form-row {
++        grid-template-columns: 1fr;
++        gap: 1rem;
++    }
++    
++    .form-actions {
++        flex-direction: column-reverse;
++    }
++    
++    .btn-primary,
++    .btn-secondary {
++        justify-content: center;
++        width: 100%;
++    }
++}
++
++@media (max-width: 640px) {
++    .publish-form-section {
++        padding: 2rem 0;
++    }
++    
++    .form-section-title {
++        font-size: 1.125rem;
++        flex-wrap: wrap;
++    }
++    
++    .form-header-icon {
++        padding: 0.75rem;
++        font-size: 1.25rem;
++    }
++}
++
++/* Form validation states */
++.form-input:invalid,
++.form-select:invalid,
++.form-textarea:invalid {
++    border-color: #ef4444;
++}
++
++.form-input:valid,
++.form-select:valid,
++.form-textarea:valid {
++    border-color: #10b981;
++}
++
++/* Loading state for submit button */
++.btn-primary .fa-spinner {
++    animation: spin 1s linear infinite;
++}
++
++@keyframes spin {
++    from { transform: rotate(0deg); }
++    to { transform: rotate(360deg); }
++}
++
++/* Enhanced form styling */
++.form-input:focus + .form-hint,
++.form-select:focus + .form-hint,
++.form-textarea:focus + .form-hint {
++    color: #3b82f6;
++}
++
++.form-group:hover .form-label i {
++    color: #3b82f6;
++    transition: color 0.2s;
++}
++
++/* Success message styling */
++.form-success {
++    background: #dcfce7;
++    border: 1px solid #bbf7d0;
++    color: #166534;
++    padding: 1rem;
++    border-radius: 0.5rem;
++    margin-bottom: 1rem;
++    display: flex;
++    align-items: center;
++    gap: 0.5rem;
++}
++
++.form-success i {
++    color: #16a34a;
++}
+ @media (min-width: 768px) {
+     .user-info {
+         display: block;
