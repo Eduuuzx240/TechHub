@@ -384,18 +384,13 @@
             <form class="modal-form" id="loginForm" onsubmit="handleLogin(event)">
                 <div class="form-group">
                     <label>Tipo de Conta</label>
-                    <div class="account-type-selector">
-                        <label class="account-type-option active">
-                            <input type="radio" name="accountType" value="individual" checked>
-                            <i class="fas fa-user"></i>
-                            <span>Pessoa Física</span>
-                        </label>
-                        <label class="account-type-option">
-                            <input type="radio" name="accountType" value="company">
+                    <div class="company-only-notice">
+                        <div class="company-badge">
                             <i class="fas fa-building"></i>
-                            <span>Empresa</span>
-                        </label>
+                            <span>Acesso Exclusivo para Empresas</span>
+                        </div>
                     </div>
+                    <input type="hidden" name="accountType" value="company">
                 </div>
 
                 <div class="form-group">
@@ -433,8 +428,8 @@
                 </div>
 
                 <div class="demo-credentials">
-                    <div><strong>Demo Pessoa Física:</strong> admin@techhub.com / admin123</div>
-                    <div><strong>Demo Empresa:</strong> empresa@techhub.com / admin123</div>
+                    <div><strong>Demo Empresa 1:</strong> empresa@techhub.com / admin123</div>
+                    <div><strong>Demo Empresa 2:</strong> techcorp@techhub.com / admin123</div>
                 </div>
             </form>
         </div>
@@ -452,25 +447,28 @@
             <form class="modal-form" id="registerForm" onsubmit="handleRegister(event)">
                 <div class="form-group">
                     <label>Tipo de Conta</label>
-                    <div class="account-type-selector">
-                        <label class="account-type-option active">
-                            <input type="radio" name="accountType" value="individual" checked>
-                            <i class="fas fa-user"></i>
-                            <span>Pessoa Física</span>
-                        </label>
-                        <label class="account-type-option">
-                            <input type="radio" name="accountType" value="company">
+                    <div class="company-only-notice">
+                        <div class="company-badge">
                             <i class="fas fa-building"></i>
-                            <span>Empresa</span>
-                        </label>
+                            <span>Cadastro Exclusivo para Empresas</span>
+                        </div>
+                    </div>
+                    <input type="hidden" name="accountType" value="company">
+                </div>
+
+                <div class="form-group">
+                    <label>Nome do Responsável</label>
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="name" placeholder="Nome do responsável" required>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label>Nome Completo</label>
+                    <label>Nome da Empresa</label>
                     <div class="input-group">
-                        <i class="fas fa-user"></i>
-                        <input type="text" name="name" placeholder="Seu nome completo" required>
+                        <i class="fas fa-building"></i>
+                        <input type="text" name="company" placeholder="Nome da sua empresa" required>
                     </div>
                 </div>
 
