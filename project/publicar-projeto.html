@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Publicar Projeto - techHUB</title>
+</head>
+<body>
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Publicar Novo Projeto</h1>
+                <p>Compartilhe seu trabalho com a comunidade e o mercado.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section">
+        <div class="container" style="max-width: 800px;">
+             <div class="contact-form-container">
+                <form class="contact-form" id="projectForm">
+                    <div class="form-group">
+                        <label>Título do Projeto</label>
+                        <input type="text" name="projectName" placeholder="Ex: Plataforma de Análise de Dados" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Descrição Curta</label>
+                        <input type="text" name="shortDescription" placeholder="Uma breve descrição para os cards" required>
+                    </div>
+                     <div class="form-group">
+                        <label>Descrição Completa</label>
+                        <textarea name="fullDescription" rows="6" placeholder="Detalhe seu projeto, os desafios e as soluções." required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Categoria</label>
+                            <select name="category" required>
+                                <option value="ai">IA & Machine Learning</option>
+                                <option value="web">Desenvolvimento Web</option>
+                                <option value="mobile">Apps Mobile</option>
+                                <option value="design">Design & UX</option>
+                                <option value="security">Segurança</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Tecnologias (separadas por vírgula)</label>
+                            <input type="text" name="tech" placeholder="Ex: React, Node.js, Python">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                         <div class="form-group">
+                            <label>Link da Imagem (URL)</label>
+                            <input type="url" name="imageUrl" placeholder="https://exemplo.com/imagem.png">
+                        </div>
+                        <div class="form-group">
+                            <label>Link do Projeto (GitHub, Site, etc.)</label>
+                            <input type="url" name="projectUrl" placeholder="https://github.com/seu-usuario/seu-projeto">
+                        </div>
+                    </div>
+                    <button type="submit" class="form-submit">Publicar Projeto</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/common.js"></script>
+    <script src="js/project-form.js"></script> </body>
+</html>
